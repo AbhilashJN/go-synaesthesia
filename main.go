@@ -44,14 +44,14 @@ func getFFTCoeffs(filePath string, ts int) []complex128 {
 func drawSection(dc *gg.Context, section []complex128, cx, cy float64, rotationFactor float64) {
 	dc.MoveTo(cx, cy)
 	rand.Seed(time.Now().UnixNano())
-	dc.RotateAbout(-math.Pi/rotationFactor, cx, cy)
+	dc.RotateAbout(-math.Pi/8, cx, cy)
 	currentX, currentY := cx, cy
 	for _, num := range section {
 		x, y := real(num), imag(num)
 		x, y = normalize(x), normalize(y)
 		dc.MoveTo(currentX, currentY)
 		dc.LineTo(currentX+x, currentY+y)
-		dc.RotateAbout(-math.Pi/rotationFactor, cx+x, cy+y)
+		dc.RotateAbout(-math.Pi/8, currentX+x, currentY+y)
 		rcolor := rand.Float64()
 		gcolor := rand.Float64()
 		bcolor := rand.Float64()
@@ -87,7 +87,7 @@ func main() {
 	dc.Fill()
 	rotationFactor := float64((rand.Intn(2) + 1) * 2)
 
-	for i := 0; i < 1000; i += 1 {
+	for i := 0; i < 1000; i += 5 {
 		begin := i * 100
 		section := fftCoeffs[begin : begin+50]
 		drawSection(dc, section, cx, cy, rotationFactor)
