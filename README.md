@@ -12,7 +12,7 @@ Generate abstract images from wave audio files (*.wav)
 ## Screenshots
 1. "Fear of flying" by Bowery Electric
 ![Screenshot](https://raw.githubusercontent.com/AbhilashJN/go-synaesthesia/main/screenshots/fearofflying.png)
-2. "Resonance" by Home
-![Screenshot](https://raw.githubusercontent.com/AbhilashJN/go-synaesthesia/main/screenshots/resonance.png)
-3. "Magna Carta" by Jakob
+2. "Magna Carta" by Jakob
 ![Screenshot](https://raw.githubusercontent.com/AbhilashJN/go-synaesthesia/main/screenshots/magnacarta.png)
+3. "Resonance" by Home
+![Screenshot](https://raw.githubusercontent.com/AbhilashJN/go-synaesthesia/main/screenshots/resonance.png)
