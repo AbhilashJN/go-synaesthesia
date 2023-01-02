@@ -1,6 +1,15 @@
 # Go-synaesthesia
 Generate abstract images from wave audio files (*.wav)
 
+## Build
+```
+go build ./
+```
+
+## Run
+```
+go-synaesthesia -i <input_file_path> -o <output_path>
+```
 
 ## Flags
 ```
